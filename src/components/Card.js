@@ -1,7 +1,4 @@
 import { useState, useEffect, } from 'react';
-import MobHeader from "./image-header-mobile.jpg";
-import DeskHeader from './image-header-desktop.jpg';
-import Image from './Image';
 import Content from './Content';
 
 function Card() {
@@ -29,12 +26,12 @@ function Card() {
             {
                 width <= 1100 ?
                 (<>
-                    <Image url={MobHeader} />
+                    <div className="header"></div>
                     <Content />
                 </>) :
                 (<>
                     <Content />
-                    <Image url={DeskHeader} />
+                    <div className="header"></div>
                 </>)
             }
         </main>
